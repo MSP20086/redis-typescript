@@ -1,0 +1,20 @@
+{
+  "name": "redis-typescript",
+  "version": "1.0.0",
+  "description": "A Redis-compatible in-memory data store written in TypeScript, with replication, persistence, transactions, streams and pub/sub.",
+  "type": "module",
+  "scripts": {
+    "start": "bun run app/main.ts",
+    "dev": "bun --watch run app/main.ts",
+    "test": "bun test",
+    "test:unit": "bun test tests/unit",
+    "test:integration": "bun test tests/integration",
+    "typecheck": "tsc --noEmit",
+    "bench": "bun run scripts/bench.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^26.6.6",
+    "typescript": "^5.9.3"
+  }
+}
